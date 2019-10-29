@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Arus Energy, Geothermal Energy, Renewable Energy Africa, Sustainable Energy Africa, Geothermal Kenya, Arus Energy Kenya" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/testing.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> 
 <!--<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" /> -->
 
@@ -19,25 +20,27 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <div class="banner">
-        <div class="container">
+        <div class="container_main">
             <nav class="navbar_main navbar-default_main">
-                <div class="navbar-header_main navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <div class="navbar-header_main navbar-left_main">
+                    <h1><a class="navbar-brand_main" href="index.html"><span><img src="images/tillil.jpg"  this.onerror=null;" width="250"></a></h1>
+                   <!-- <div class="Navbar__Link Navbar__Link-toggle"><i class="fas fa-bars"></i></div>
+                    <button type="button" class="navbar-toggle_main collapsed_main" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a class="navbar-brand_main" href="index.html"><span><img src="images/tillil.jpg" onerror="this.src=images/arus-logo.png; this.onerror=null;" width="175"></a></h1>
+                -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					    <ul class="nav_one navbar-nav_main">
+				<div class="collapse_tilil navbar-collapse_tilil navbar-right" id="bs-example-navbar-collapse-1">
+					    <ul class="navbar-nav_main">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="#about">About Us</a></li>
 							<li><a href="#why">Why Geothermal?</a></li>
@@ -45,32 +48,61 @@
 						</ul>
 				</div>
             </nav>
-            <section class="slider_main">
-                <div class="flexslider_main ">
-                    <ul class="slides_main_inside">
-                        <li>
-                            <div class="arus_banner_info_main">
-                                <img src="images/arus-factory.svg" onerror="this.src=images/arus-factory.png; this.onerror=null;" width="200">
-                                <h3>Geothermal <span>energy</span> for East Africa</h3>
-                                <p>Alternative solutions for renewable energy and environmental sustainablity. A renewable energy resource delivering heat and power 24 hours a day throughout the year. </p>
+            <div class="display_carousel">
+                <!--start of carousel-->
+                    <div class="carousel">
+                        <ul class="slides">
+                            <input type="radio" name="radio-buttons" id="img-1" checked />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img src="images\Wilson-Airport.webp">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-3" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-2" class="next-slide">
+                                      <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-2" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img src="images\N680KJ-Exterior-3-compressed.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-1" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-3" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-3" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img src="images\Small-Plane-Take-Off.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-2" class="prev-slide">
+                                        <span>&lsaquo;</span> 
+                                    </label>
+                                    <label for="img-1" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <div class="carousel-dots">
+                                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
                             </div>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-            <!-- flexSlider -->
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(window).load(function(){
-					  $('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						  $('body').removeClass('loading');
-						}
-					  });
-					});
-				</script>
-			<!-- //flexSlider -->
+            
         </div>
     </div>
     <!-- //banner -->
@@ -82,7 +114,7 @@
 					<img src="images/night-factory.jpg" alt=" " class="img-responsive" />
 				</figure>
 			</div>
-			<div class="agileinfo_grid" style="padding:20px; background:#fff!important;">
+			<div class="agileinfo_grid" style="padding:50px; background:#fff!important;">
 				<figure class="agileits_effect_moses" style="background:#fff!important;" >
 					<img src="images/arus-license-badge.png" alt=" " class="img-responsive" />
 				</figure>
@@ -90,7 +122,16 @@
 		</div>
 		<div class="col-md-8 arus_welcome_bottom_left">
 			<h3>Who we are</h3>
-			<p>Arus Energy Limited is a Kenyan based company focused on renewable energy. Arus Energy has been granted a geothermal resource license by the Ministry of Energy in August 2018. The license which is valid for a 30 year period grants the company rights to prospect and develop geothermal energy in the 800 sq km Arus Bogoria prospect. </p><p> Arus Energy has title to 1,200 acres of land where Arus Steam Jets are located and an additional 80 sq km allocated by the Government of Kenya in the area. The area is in the Baringo County, Rift Valley and is located approximately 40Km Nakuru town. Our site is easily accessible via road and connection to the grid will be made possible through the Silali-Rongai 400Kv Line scheduled for completion in 2018.</p>
+			<p>Arus Energy Limited is a Kenyan based company focused on renewable energy.
+                 Arus Energy has been granted a geothermal resource license by the Ministry 
+                 of Energy in August 2018. The license which is valid for a 30 year period
+                  grants the company rights to prospect and develop geothermal energy in the 
+                  800 sq km Arus Bogoria prospect. </p><p> Arus Energy has title to 1,200 acres 
+                      of land where Arus Steam Jets are located and an additional 80 sq km allocated 
+                      by the Government of Kenya in the area. The area is in the Baringo County, 
+                      Rift Valley and is located approximately 40Km Nakuru town. Our site is easily 
+                      accessible via road and connection to the grid will be made possible through 
+                      the Silali-Rongai 400Kv Line scheduled for completion in 2018.</p>
 
 			<div class="clearfix"> </div>
 		</div>
@@ -100,23 +141,34 @@
 <!-- //welcome-bottom -->
 <!-- partners -->
 <div class="welcome" id="why">
-    <div class="container">
+    <div class="container_tillil">
         <h3 class="agileinfo_header">Why geothermal?</h3>
         <div class="aels_news_grids">
             <div class="col-md-6">
                 <div class="arus_news_grid">
-                    <h4>Geothermal Potential</h4>
+                    <h4>THINK OF PARTNERING WITH TILIL ENERGY.
+                        WHAT COMES TO MIND?
+                        </h4>
                 </div>
                 <div class="arus_news_grid">
-                    <p>Several surface studies done by Kenya Electric Generating Co. Ltd (KENGEN), United Nations University (Geothermal Training Programme) and the Geothermal Development Company (GDC) on the Arus Bogoria geothermal prospect indicate a geothermal energy potential of 400MW.</p>
+                    <p>Being part of a distinguished network of trusted suppliers. Understanding 
+                        that you will go through a well-defined payment process with defined terms. 
+                        Knowing that you will have a hassle-free process when providing our 
+                        customers with their fueling needs.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="arus_news_grid">
-                    <h4>Energy Production</h4>
+                    <h4>GET A FUEL QUOTE FOR YOUR AIRCRAFT</h4>
                 </div>
                 <div class="arus_news_grid">
-                    <p>Kenya is ranked 8th globally in geothermal energy production. At present geothermal power accounts for 51 per cent of the nation’s installed power capacity. Geothermal prospects within the country is spread over the Rift Valley. Kenya has a geothermal potential of 10,000 MW. Investment needs over the next ten years in the geothermal sector will amount to at least USD. 3.4 Billion, with financing from both the Government of Kenya and the private sector.</p>
+                    <p>Whether you are an aircraft operator, owner, governmental flight operator or 
+                        preferred supplier, we would like to hear from you.</p>
+                        <p>Aviation fuel supply constitutes is our core offerings. </p>
+                       <p> If you have any questions about aviation fuel types, availability or fuel 
+                           pricing please feel free to reach out to our Fuel Service team, available 24/7 to 
+                           provide you with immediate quotations.
+                        </p>
                 </div>
             </div>
 
@@ -145,14 +197,23 @@
             </div>
             <div class="col-md-5 agileits_mail_grid_right">
                 <div class="agile-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2251.6081346185224!2d36.76756348975668!3d-1.2919411311934907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d-1.2912327!2d36.770119199999996!4m0!5e0!3m2!1sen!2suk!4v1512923438598" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+                    <iframe src="https://maps.google.com/maps?q=silverpool%20kenya&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
                 </div>
                 <div class="left-agileits">
                     <h3>Address</h3>
                         <ul>
-                            <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Dhanjay Court 504,<br/>
-Mbaazi Road, Valley Arcade<br/> P.O. BOX 25498-00603</li>
-                            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@arusenergy.com">info@arusenergy.com</a></li>
+                            <li>
+                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                    <div class="address">
+                                        silverpool office suites,<br/>
+                                        3rd floor,<br/>
+                                        P.O. BOX 25498-00603
+                                    </div>
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                <a href="mailto:info@arusenergy.com">info@tililenergy.co.ke</a>
+                            </li>
                         </ul>
                 </div>
             </div>
@@ -171,8 +232,8 @@ Mbaazi Road, Valley Arcade<br/> P.O. BOX 25498-00603</li>
             <div class="footer-icons">
                 <ul>
                     <li>
-                        <a href="https://twitter.com/arusenergy" class="twitter"><i class="fa fa-twitter"></i></a><span>Twitter</span>
-                        <a class="twitter-timeline" href="https://twitter.com/arusenergy" data-widget-id="598420614932779008">Tweets by @arusenergy</a>
+                        <a href="https://twitter.com/tililenergy" class="twitter"><i class="fa fa-twitter"></i></a><span>Twitter</span>
+                        <a class="twitter-timeline" href="https://twitter.com/tililenergy" data-widget-id="598420614932779008">Tweets by @tililenergy</a>
                     </li>
                 </ul>
             </div>
@@ -184,7 +245,7 @@ Mbaazi Road, Valley Arcade<br/> P.O. BOX 25498-00603</li>
 <div class="copyright">
     <div class="container">
         <div class="agileinfo">
-            <p>&copy; 2019 Arus Energy . All Rights Reserved . Design by <a href="http://digitalbrush.design/">Digital Brush</a></p>
+            <p>&copy; 2019 Tillil Energy . All Rights Reserved . Design by <a href="#">Andrew kimaru</a></p>
         </div>
     </div>
 </div>
